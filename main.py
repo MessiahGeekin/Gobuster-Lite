@@ -16,7 +16,7 @@ def reading_wordlist(wordlist_path):
         try:
             with open(wordlist_path, "r", encoding=encoding) as file:
                 for words in file:
-                    list_wordlist.append(words.strip())  # Strip whitespace from each word
+                    list_wordlist.append(words.strip())
             return list_wordlist
         except UnicodeDecodeError:
             print(f"Cannot decode using {encoding}")
